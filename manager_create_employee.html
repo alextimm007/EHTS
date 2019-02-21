@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+   <head>
+       <title> My first website </title>
+       <link rel="stylesheet" href="managerHeader.css">
+	   <link rel="stylesheet" href="createEmployee.css">
+   </head>
+<body>
+<header>
+	<div class="tit">
+		<h1><b>Employee Hours Tracking System</b></h1>       
+	</div>
+</header>
+	<!-- navigation bar -->
+    <div>
+       <ul class="nav">
+			<li><a href="manager_create_employee.html">Create A Profile</a></li>
+			<li><a href="manager_search_employee.php">Search Employee</a></li>
+            <li><a href="manager_time_off_list.php">Time Off Requests</a></li>
+            <li><a href="manager_attendance.php">Employee's Attendance</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>        
+    </div>
+	<!-- form to create employee -->
+	<div class="createEmp">
+		<h2> Create a profile here </h2>
+		<form action="manager_create_employee.php" method="get">
+			<fieldset class="account-info">		
+				<label>
+					First name:<br> <input type="text" name="firstname"><br>
+				</label>
+				<label>
+					Last name:<br> <input type="text" name="lastname"><br>
+				</label>
+				<label>
+					Phone number:<br> <input type="number" name="phone"><br>
+				</label>
+				<label>
+					Email address:<br> <input type="email" name="email"><br>
+				</label>
+				<label>
+					Position:<br> <input type="text" name="position"><br>
+				</label>
+				<label>
+					Department:<br><input type="text" name="department"><br>
+				</label>
+				<label>
+					User Name:<br> <input type="text" name="username"><br>
+				</label>
+				<label>
+					Password:<br> <input type="text" name="password"><br>
+				</label>
+				<label>
+					User Type:<br>
+					<br> <select name='user_type' id ='user_type'>
+							<option value='manager'>MANAGER</option>
+							<option value='employee'>EMPLOYEE</option>
+						</select>
+					<br>			
+				</label>				
+			</fieldset>
+			<!-- submit form -->
+			<fieldset class="account-action">
+				<input class="btn" type="submit" name="submit" value="Submit">
+			</fieldset>
+		</form>
+	</div>	
+	<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   	
+</body>
+</html>
