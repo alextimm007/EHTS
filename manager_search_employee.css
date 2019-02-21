@@ -1,0 +1,91 @@
+/* search employee label */
+h2{
+	text-align: center;
+	}
+
+/* wrong input label */
+.label{
+	color: #FF0000;
+	font-size: 20px;
+	text-align: center;
+	}
+
+.employeeSearch{
+	width: 100%;
+	}
+
+/* table with rows and columns to display info */
+table{
+	border-collapse: collapse;
+	width: 30%;
+	padding: 15px;
+	text-align: center;
+	}
+
+/*th {background-color: #FFFFCC}*/
+
+/* organize table columns */
+td {
+	border: 2px solid #000;
+	padding: 10px;
+	text-align: center;
+	}
+
+/* organize table rows */
+table tr:nth-child(odd) td {
+	background-color:#CCFF99;
+	}  	
+
+/* buttons layout */
+.btn {
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	padding: 10px 18px;
+	font-size: 14px;
+	cursor: pointer;
+	}
+
+/* update */
+.update {
+	border-color: #4CAF50;
+	color: green;
+	}
+
+.update:hover {
+	background-color: #4CAF50;
+	color: white;
+	}
+
+/* delete */
+.delete {
+	border-color: #f44336;
+	color: red
+	}
+
+.delete:hover {
+	background: #f44336;
+	color: white;
+	}
+
+/* search */
+.search {
+	border-color: #3399FF;
+	color: blue;
+	}
+
+.search:hover {
+	background-color: #3399FF;
+	color: white;
+	}
+
+/* refresh */
+.refresh {
+	border-color: #808080;
+	color: grey;
+	}
+
+.refresh:hover {
+	background: #808080;
+	color: white;
+	}
